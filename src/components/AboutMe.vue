@@ -6,16 +6,13 @@
                     <span class="font-normal">Hello I'am </span>
                     <span class="font-extrabold">Jan Muixi</span><br />
                     <span class="font-extrabold">Frontend </span><span
-                        class="text-zinc-900 font-extrabold text-stroke">Developer</span><br />
+                        class="text-zinc-500 font-extrabold text-stroke">Developer</span><br />
                     <span class="font-normal">Based in </span><span class="font-extrabold">Spain</span>
                 </div>
                 <div class="mt-8 text-[16px] text-zinc-200">
                     My name is Jan Muixi and I am a Frontend Developer, I have a solid background in
                     JavaScript and other frontend tools and I am passionate about creating user-centric and
-                    visually appealing interfaces. My experience with modern frontend frameworks such as Vue,
-                    has allowed me to deliver high-quality and scalable components. I am adept at
-                    collaborating with cross-functional teams, understanding project requirements, and
-                    translating them into a complete product.
+                    visually appealing interfaces.
                 </div>
             </div>
             <img class="size-[500px] 2xl:size-[700px]" src="@/assets/images/aboutmepic.svg" alt="aboutmepic" />
@@ -23,7 +20,8 @@
         <div class="flex flex-col items-center justify-center text-[48px]">
             <div><span class="font-normal">My</span> <span class="font-extrabold">Skills</span></div>
             <div class="mt-10 flex flex-wrap gap-8 justify-center">
-                <div v-for="skill in skills" :key="skill.name" class="size-[186px] rounded-[4px] border border-white flex flex-col items-center justify-center gap-8">
+                <div v-for="skill in skills" :key="skill.name"
+                    class="size-[186px] rounded-[4px] border border-white flex flex-col items-center justify-center gap-8 cursor-pointer hover:bg-gray-800 custom-transition draw-border">
                     <img class="size-[60px]" :src="skill.imgUrl" :alt="skill.name">
                     <div class="text-[20px] font-bold">{{ skill.name }}</div>
                 </div>
